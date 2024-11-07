@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Georges Garden Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/georges_garden_shop_logo.png"
+                        alt="George's Garden Shop Logo" class="p-1" height="40">Georges Garden Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container my-3">
+        <h2 class="text-center">Contact Us</h2>
+        <form class="row g-3" action="#" method="post" id="theForm">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <span class="mytooltip">Name must be 2-20 characters long.</span>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <span class="mytooltip">Enter a valid email address. This should include a name, an @ symbol, and
+                    a domain name (like .com, .org, or .net).
+                </span>
+            </div>
+            <div class="col-md-12">
+                <label for="category" class="form-label">Category of Interest</label>
+                <select class="form-select" id="category">
+                    <option value="plants">Plants</option>
+                    <option value="pots">Pots</option>
+                    <option value="gifts">Gifts</option>
+                    <option value="tools">Garden Tools</option>
+                    <option value="fertilizers">Fertilizers</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <div class="col-12">
+                <input type="checkbox" name="terms" id="terms" required> I agree to the terms.
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success" id="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+    <footer class="bg-success text-white text-center py-2">
+        <p>&copy; 2024 Georges Garden Shop</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/errorMessages.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
