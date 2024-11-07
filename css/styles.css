@@ -22,9 +22,7 @@ footer {
     color: #fff;
     padding: 5px;
     border-radius: 3px;
-    font-size: 12px;
-    z-index: 1000;
-    transition: visibility 0.2s ease-in-out;
+    font-size: 12px;    
 }
 
 input:focus + .mytooltip, 

@@ -16,7 +16,7 @@ function validateForm(e) {
 	// Flag variable:
 	let error = false;
 
-	// Validate the first name:
+	// Validate the name:
 	if (/^[A-Z \.\-']{2,20}$/i.test(name.value)) {
 		removeErrorMessage('name');
 	} else {
